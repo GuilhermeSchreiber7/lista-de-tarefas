@@ -25,8 +25,8 @@ function additem(){ //função de adcionar item parágrafo
     })
 }
 addButton.addEventListener("click", additem) // adciona o item na lista de pendente
-inputcamp.addEventListener("keyup", function(e){ // 
-    if(e.keyCode == 13){
+inputcamp.addEventListener("keyup", function(e){ // função de adcionar o item na lista através do botão enter
+    if(e.keyCode == 13){ // só chama quando for a tecla 13 (enter)
         additem()
     }
 
