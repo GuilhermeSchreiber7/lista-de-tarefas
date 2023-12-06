@@ -4,7 +4,7 @@ let containertask = document.getElementById("containertask"); // espacço onde f
 let inputcamp = document.getElementById("camporesult") // campo onde o usuario digita sua tarefa pendente 
 let completetask = document.getElementById("containercompletetask") // campo onde fica as tarefas já feitas 
 
-function additem(){
+function additem(){ //função de adcionar item parágrafo
     let task = document.createElement("p"); //é criad o elemento que vai para uma let
     let buttonFinish = document.createElement("button") // cria o botão de finalizar ao lado da tarefa
     buttonFinish.textContent = "Finish" // texto que fica no botão
@@ -24,9 +24,8 @@ function additem(){
        inputcamp.focus();
     })
 }
-
-addButton.addEventListener("click", additem)
-inputcamp.addEventListener("keyup", function(e){ 
+addButton.addEventListener("click", additem) // adciona o item na lista de pendente
+inputcamp.addEventListener("keyup", function(e){ // 
     if(e.keyCode == 13){
         additem()
     }
