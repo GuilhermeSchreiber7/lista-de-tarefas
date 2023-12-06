@@ -18,11 +18,11 @@ function additem(){ //função de adcionar item parágrafo
         containertask.removeChild(task); // remove o elemento p da lista de tarefas pendentes
         completetask.appendChild(task); // adciona o elemento p na lista de tarefas concluidas
         task.removeChild(task.childNodes[1]) // remove o botão de finalizar
-        inputcamp.focus();
+        inputcamp.focus(); // foca no input após finalizar uma tarefa
     })
     document.getElementById("limpar2").addEventListener("click", function(){
        document.getElementById("containercompletetask").removeChild(task); // limpa os elementos da lista de tarefas concluidas
-       inputcamp.focus();
+       inputcamp.focus(); // foca no input após limpar a lista de tarefas feitas
     })
 }
 }
