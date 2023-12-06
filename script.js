@@ -3,7 +3,6 @@ let addButton = document.getElementById("add"); // botão de adcionar um item na
 let containertask = document.getElementById("containertask"); // espacço onde fica as tarefas pendentes
 let inputcamp = document.getElementById("camporesult") // campo onde o usuario digita sua tarefa pendente 
 let completetask = document.getElementById("containercompletetask") // campo onde fica as tarefas já feitas 
-
 function additem(){ //função de adcionar item parágrafo
     let task = document.createElement("p"); //é criad o elemento que vai para uma let
     let buttonFinish = document.createElement("button") // cria o botão de finalizar ao lado da tarefa
@@ -31,6 +30,4 @@ inputcamp.addEventListener("keyup", function(e){ // função de adcionar o item 
     if(e.keyCode == 13){ // só chama a função quando for a tecla 13 (enter)
         additem()
     }
-
-    
 })
