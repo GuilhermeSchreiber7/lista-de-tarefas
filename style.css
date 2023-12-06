@@ -1,0 +1,24 @@
+#add{
+    background-color: gray;
+    padding: auto;
+    margin: auto;
+    border-radius: 4px;
+}
+
+button {
+    border: 0px;
+    background-color: rgb(94, 192, 94);
+    border-radius: 4px;
+    margin: 10px;
+}
+#limpar2{
+    margin: 10px;
+    border-radius: 4px;
+}
+#limpar:hover{
+    background-color: black;
+}
+body{
+justify-content: center;
+text-align: center;
+}

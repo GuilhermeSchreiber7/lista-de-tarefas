@@ -7,6 +7,7 @@ let completetask = document.getElementById("containercompletetask") // campo ond
 function additem(){ //função de adcionar item parágrafo
     let task = document.createElement("p"); //é criad o elemento que vai para uma let
     let buttonFinish = document.createElement("button") // cria o botão de finalizar ao lado da tarefa
+    if (inputcamp.value.trim() !== "") {
     buttonFinish.textContent = "Finish" // texto que fica no botão
     inputcamp.focus(); // ira fazer que o foco fique sempre no input
     task.innerText = inputcamp.value; // adciona o texto do input dentro do elemento p que vai para a lista
@@ -24,6 +25,8 @@ function additem(){ //função de adcionar item parágrafo
        inputcamp.focus();
     })
 }
+}
+
 addButton.addEventListener("click", additem) // adciona o item na lista de pendente
 inputcamp.addEventListener("keyup", function(e){ // função de adcionar o item na lista através do botão enter
     if(e.keyCode == 13){ // só chama a função quando for a tecla 13 (enter)
