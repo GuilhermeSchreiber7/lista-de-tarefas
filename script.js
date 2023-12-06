@@ -8,6 +8,7 @@ addButton.addEventListener("click", function(){
     let task = document.createElement("p"); //é criad o elemento que vai para uma let
     let buttonFinish = document.createElement("button") // cria o botão de finalizar ao lado da tarefa
     buttonFinish.textContent = "Finish" // texto que fica no botão
+    inputcamp.focus(); // ira fazer que o foco fique sempre no input
     task.innerText = inputcamp.value; // adciona o texto do input dentro do elemento p que vai para a lista
     containertask.appendChild(task); // adciona o elemento p no espaço de tarefas pendentes
     task.appendChild(buttonFinish) // adciona o botão de finalizar ao lado do elemento p
@@ -16,9 +17,11 @@ addButton.addEventListener("click", function(){
         containertask.removeChild(task); // remove o elemento p da lista de tarefas pendentes
         completetask.appendChild(task); // adciona o elemento p na lista de tarefas concluidas
         task.removeChild(task.childNodes[1]) // remove o botão de finalizar
+        inputcamp.focus();
     })
     document.getElementById("limpar2").addEventListener("click", function(){
        document.getElementById("containercompletetask").removeChild(task); // limpa os elementos da lista de tarefas concluidas
+       inputcamp.focus();
     })
     
 })
